@@ -1,0 +1,33 @@
+name: Bug report
+description: Something does not behave the way it should
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How do I reproduce it?
+      description: The exact commands, and the data or inputs you used.
+      placeholder: |
+        1. python analysis/expression.py
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: "Output of `git rev-parse --short HEAD`, or the release tag."
+  - type: checkboxes
+    id: no-data
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have not pasted any real data, patient information or credentials into this issue.
+          required: true

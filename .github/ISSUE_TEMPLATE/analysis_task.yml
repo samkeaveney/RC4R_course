@@ -1,0 +1,24 @@
+name: Analysis task
+description: A piece of work to do — a feature, an analysis, a refactor
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What needs doing?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: What decision or result depends on this? Worth writing down — it is the part nobody can reconstruct later.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: How will we know it is done?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
